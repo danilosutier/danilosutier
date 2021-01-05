@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="br" >
+<head>
+<meta charset="utf-8">
+<title>Calcular IMC</title>
+
+<script>
+function calcula (){
+var peso = document.formulario.pso.value;
+var altura = document.formulario.alt.value;
+imc = peso/(altura*altura);
+document.formulario.resultado.value = imc;
+if (imc <16) 
+document.formulario.comentario.value = ("Baixo peso Grau III");
+if (imc >=16 && imc <17) 
+document.formulario.comentario.value = ("Baixo peso Grau II");
+if (imc >=17.00 && imc <18.50) 
+document.formulario.comentario.value = ("Baixo peso Grau I");
+if (imc >=18.50 && imc <25) 
+document.formulario.comentario.value = ("Peso ideal");
+if (imc >=25 && imc <30) 
+document.formulario.comentario.value = ("Sobrepeso");
+if (imc >=30 && imc <35) 
+document.formulario.comentario.value = ("Obesidade Grau I");
+if (imc >=35 && imc <40) 
+document.formulario.comentario.value = ("Obesidade Grau II");
+if (imc >=40) 
+document.formulario.comentario.value = ("Obesidade Grau III");
+}
+</script>
+<head>
+</head>
+<body style="margin-left:50px">
+              <form name="formulario">
+              <table border="1">
+  <body>
+    <tr>
+      <td><strong>Calcular IMC</strong></td>
+      </tr>
+    <tr>
+      <td><input typetext="number" name="pso" size="30" maxlength="7" placeholder="Peso em Kg - ex: 80,550" onBlur="condicao(this.value)" /></td>
+    </tr>
+    <tr>
+      <td><input typetext="number" name="alt" size="30" maxlength="4" placeholder="Altura em Metros ex: 1,70" onBlur="condicao(this.value)" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" value="Calcular" onclick="calcula()" name="button" /></td>
+      </tr>
+    <tr>
+      <td>   IMC    :<input type="text" name="resultado" size="16" maxlength="16" /></td>
+    </tr>
+    <tr>
+      <td>Situa&ccedil;&atilde;o: <input type="text" name="comentario" size="16" maxlength="16" /></td>
+    </tr>
+    <tr>
+            </tr>
+  </body>
+</table>
+</form>
