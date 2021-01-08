@@ -1,10 +1,6 @@
-function Home() {
-    return (
-        <div>
-        <h1>Danilo Araujo Sutier  2020</h1>
-        <p>HOME PAGE AQUI!</p>
-        </div>
-    )
-}
 
-export default Home
+import Layout from "../components/Layout";
+
+const Index = () => <Layout>Bem Vindo a Pagina do Danilo Sutier!</Layout>;
+
+export default Index;
