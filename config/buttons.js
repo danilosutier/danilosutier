@@ -9,22 +9,22 @@ import {
 
 const navButtons = [
   {
-    label: "Explore",
+    label: "Explorar",
     path: "/explore",
     icon: <FontAwesomeIcon icon={faCompass} />
   },
   {
-    label: "Near Me",
+    label: "Jogos",
     path: "/nearme",
     icon: <FontAwesomeIcon icon={faMapMarkerAlt} />
   },
   {
-    label: "My Cart",
+    label: "Projetos",
     path: "/mycart",
     icon: <FontAwesomeIcon icon={faShoppingCart} />
   },
   {
-    label: "Profile",
+    label: "Sobre mim",
     path: "/profile",
     icon: <FontAwesomeIcon icon={faUser} />
   }
